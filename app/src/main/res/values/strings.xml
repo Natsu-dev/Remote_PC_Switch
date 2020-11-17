@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Remote PC Switch</string>
+    <string name="main_button">Switch</string>
+    <string name="set_button">Edit Lists</string>
 </resources>
