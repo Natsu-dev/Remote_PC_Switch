@@ -23,7 +23,7 @@
             <Spinner
                 android:id="@+id/connSpinner"
                 android:layout_width="match_parent"
-                android:layout_height="51dp"
+                android:layout_height="match_parent"
                 android:prompt="@string/connSpinner_prompt" />
         </LinearLayout>
 
@@ -34,10 +34,23 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="TextView" />
+                android:text="@string/text_IP" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/text_IP" />
         </LinearLayout>
 
         <LinearLayout
@@ -48,7 +61,7 @@
             <Button
                 android:id="@+id/setButton"
                 android:layout_width="match_parent"
-                android:layout_height="77dp"
+                android:layout_height="match_parent"
                 android:text="@string/set_button" />
 
         </LinearLayout>
@@ -61,7 +74,7 @@
             <Button
                 android:id="@+id/mainButton"
                 android:layout_width="match_parent"
-                android:layout_height="74dp"
+                android:layout_height="match_parent"
                 android:text="@string/main_button" />
         </LinearLayout>
 

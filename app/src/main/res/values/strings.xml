@@ -3,4 +3,7 @@
     <string name="main_button">Switch</string>
     <string name="set_button">適用</string>
     <string name="connSpinner_prompt">接続先リスト</string>
+    <string name="text_IP">0.0.0.0</string>
+    <string name="text_port">0.0.0.0</string>
+    <string name="text_keyPath">0.0.0.0</string>
 </resources>
