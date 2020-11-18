@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.*
 
 class MainActivity : AppCompatActivity() {
-    private val listAr = arrayOf("0","1", "2", "3", "4", "5") //リストの中身
+    private val listAr = arrayOf("0", "1", "2", "3", "4", "5") //リストの中身
     private var select: Int = 0 //リスト選択時の番号
 
     override fun onCreate(savedInstanceState: Bundle?) {
