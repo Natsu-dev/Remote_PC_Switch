@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import com.github.kittinunf.fuel.httpGet
+import com.github.kittinunf.result.Result
 
 class MainActivity : AppCompatActivity() {
     private val listAr = arrayOf("0", "1", "2", "3", "4", "5") //リストの中身
@@ -34,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         button.setOnClickListener { //mainButton押したときの処理
+            "localhost/?change=1"
             Toast.makeText(this, "Button pushed.", Toast.LENGTH_SHORT).show() //押した旨を表示
         }
     }
