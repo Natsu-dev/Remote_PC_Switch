@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val spinner = findViewById<Spinner>(R.id.connSpinner) //connSpinnerを見つけておく
-        val button = findViewById<Button>(R.id.mainButton) //mainButtonを見つけておく
+        val imageButton = findViewById<ImageButton>(R.id.mainButton) //mainButtonを見つけておく
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, listAr) //adapterを作成
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) //選択肢の各項目をレイアウト
@@ -30,14 +30,14 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this@MainActivity, "接続先"+ select + "番が選択されました", Toast.LENGTH_SHORT).show() //格納した旨を表示
             }
 
-            override fun onNothingSelected(parent: AdapterView<*>?) { //何も選択されなかった場合
+            override fun onNothingSelected(parent: AdapterView<*>?) { // 何も選択されなかった場合
               //
             }
         }
 
-        button.setOnClickListener { //mainButton押したときの処理
+        imageButton.setOnClickListener { // mainButton押したときの処理
             "localhost/?change=1"
-            Toast.makeText(this, "Button pushed.", Toast.LENGTH_SHORT).show() //押した旨を表示
+            Toast.makeText(this, "Button pushed.", Toast.LENGTH_SHORT).show() // 押した旨を表示
         }
     }
 
